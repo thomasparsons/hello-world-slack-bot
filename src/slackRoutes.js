@@ -1,5 +1,5 @@
 const express = require("express")
-const responses = require("./app/responses")
+const responses = require("./responses")
 
 const router = new express.Router()
 

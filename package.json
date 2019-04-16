@@ -1,6 +1,6 @@
 {
   "name": "hello-world-slack-bot",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "hello-world-slack-bot",
   "main": "src/index.js",
   "scripts": {
@@ -13,8 +13,6 @@
   "author": "Tom Parsons",
   "license": "ISC",
   "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.4"
   }
