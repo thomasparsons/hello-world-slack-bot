@@ -3,8 +3,9 @@ const responses = require("./responses")
 
 const router = new express.Router()
 
-router.post("/slack/hello-world", async(req, res) =>
-  responses.genericResponse(req.body).then((r) => res.json(r))
-)
+router.post("/slack/hello-world", async(req, res) => {
+  const r = await responses.genericResponse(req.body)
+  return res.json(r)
+})
 
 module.exports = router
