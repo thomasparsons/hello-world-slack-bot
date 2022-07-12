@@ -1,11 +1,11 @@
-const express = require("express")
-const responses = require("./responses")
+const express = require("express");
+const responses = require("./responses");
 
-const router = new express.Router()
+const router = new express.Router();
 
-router.post("/slack/hello-world", async(req, res) => {
-  const r = await responses.genericResponse(req.body)
-  return res.json(r)
-})
+router.post("/notion", async (req, res) => {
+  const r = await responses.genericResponse(req.body);
+  return res.json(r);
+});
 
-module.exports = router
+module.exports = router;

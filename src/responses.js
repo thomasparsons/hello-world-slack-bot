@@ -1,16 +1,18 @@
-const service = {}
+const service = {};
 
 service.genericResponse = (slackReqObj) => {
   const slackResponse = {
-    attachments: [{
-      color: "#000000",
-      text: "hello world!"
-    }],
+    attachments: [
+      {
+        color: "#000000",
+        text: "hello world!",
+      },
+    ],
     channel: slackReqObj.channel_id,
-    response_type: "in_channel"
-  }
+    response_type: "in_channel",
+  };
 
-  return Promise.resolve(slackResponse)
-}
+  return Promise.resolve(slackResponse);
+};
 
-module.exports = service
+module.exports = service;
